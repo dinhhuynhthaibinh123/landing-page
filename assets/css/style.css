@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+
+.content {
+    width: 1110px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    background: #0f1b4c;
+    min-width: 98px;
+    border-radius: 12px;
+
+    padding: 18px 16px;
+    font-weight: 500;
+    font-size: 1.3rem;
+    text-align: center;
+
+    color: #ffffff;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* ===================== Header ======================= */
+
+.header {
+    position: relative;
+    height: 100vh;
+    background: #e6f0ff;
+    padding-top: 38px;
+}
+/* Nav Bar */
+
+.header .nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav-bar ul {
+    display: flex;
+    margin-left: 64px;
+}
+
+.header .nav-bar li {
+    margin-left: 28px;
+}
+
+.header .nav-bar ul li a {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #4f5361;
+}
+
+.header .nav-bar ul li:hover {
+    text-decoration: underline;
+}
+
+.header .nav-bar .actions {
+    margin-left: auto;
+}
+
+.header .nav-bar .actions .sign-in {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.5;
+
+    color: #0f1b4c;
+}
+
+.header .nav-bar .actions .sign-up {
+    margin-left: 18px;
+    font-size: 1.4rem;
+    padding: 13px 16px;
+    border-radius: 8px;
+}
+
+/* Hero */
+
+.header .hero {
+    margin-top: 130px;
+}
+
+.header .hero .info {
+    width: 51%;
+}
+
+.header .hero .sub-title {
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: 0.01em;
+    color: #687690;
+}
+
+.header .hero .title {
+    margin-top: 8px;
+
+    font-weight: 700;
+    font-size: 6.2rem;
+    line-height: 1.19;
+    color: #000336;
+}
+
+.header .hero .desc {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.78;
+    color: #5a6473;
+}
+
+.header .hero .btn-cta {
+    margin-top: 40px;
+    min-width: 170px;
+}
+
+.header .hero .hero-img {
+    position: absolute;
+    bottom: 0;
+    right: calc((100% - 1110px) / 2 - 100px);
+}
+
+/* ================== CLient ======================= */
+
+.clients {
+    padding: 122px 0 81px;
+}
+
+.clients .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients .desc {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    color: #7d8589;
+}
+
+.clients .row-desc {
+    margin-top: 23px;
+}
+
+.clients .images {
+    margin-top: 96px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ========================== Guide ======================== */
+.guides {
+    padding: 93px 0 79px;
+}
+
+.guides .sub-title {
+    position: relative;
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+    text-align: center;
+    color: #000339;
+}
+
+.guides .sub-title::before {
+    content: "";
+    background: #000339;
+    border-radius: 12px;
+
+    /* display: inline-block; */
+    height: 4px;
+    width: 41px;
+
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.guides .desc {
+    margin: 20px auto 0;
+
+    width: 459px;
+    max-width: 100%;
+
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+
+    text-align: center;
+    color: #5a6473;
+}
+.guides .list-guide {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+}
+
+.guides .item {
+    text-align: center;
+}
+
+.guides .title {
+    margin-top: 26px;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 1.1;
+    color: #3b3c45;
+}
+
+.guides .link {
+    margin-top: 10px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #0689ff;
+}
+
+.guides .link .arrow {
+    margin-left: 8px;
+}
+
+.guides .guide-cta {
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guides .guide-cta .btn {
+    min-width: 170px;
+}
