@@ -514,6 +514,9 @@ a {
     font-size: 0.72rem;
     color: #ffffff;
 }
+.stats .avatar span {
+    margin-top: 1px;
+}
 
 .stats .avatar-group .avatar + .avatar {
     margin-left: -3px;
