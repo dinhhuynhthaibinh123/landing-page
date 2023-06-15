@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -43,44 +48,46 @@ a {
 
 /* ===================== Header ======================= */
 
-.header {
-    position: relative;
-    height: 100vh;
+.fixed-header {
+    padding-top: 26px;
     background: #e6f0ff;
-    padding-top: 38px;
+
+    position: sticky;
+    top: -26px;
+    z-index: 1;
 }
 /* Nav Bar */
-
-.header .nav-bar {
+.fixed-header .nav-bar {
     display: flex;
     align-items: center;
+    padding: 12px 0;
 }
 
-.header .nav-bar ul {
+.fixed-header .nav-bar ul {
     display: flex;
     margin-left: 64px;
 }
 
-.header .nav-bar li {
+.fixed-header .nav-bar li {
     margin-left: 28px;
 }
 
-.header .nav-bar ul li a {
+.fixed-header .nav-bar ul li a {
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 1.5;
     color: #4f5361;
 }
 
-.header .nav-bar ul li:hover {
+.fixed-header .nav-bar ul li:hover {
     text-decoration: underline;
 }
 
-.header .nav-bar .actions {
+.fixed-header .nav-bar .actions {
     margin-left: auto;
 }
 
-.header .nav-bar .actions .sign-in {
+.fixed-header .nav-bar .actions .sign-in {
     font-weight: 500;
     font-size: 1.4rem;
     line-height: 1.5;
@@ -88,7 +95,7 @@ a {
     color: #0f1b4c;
 }
 
-.header .nav-bar .actions .sign-up {
+.fixed-header .nav-bar .actions .sign-up {
     margin-left: 18px;
     font-size: 1.4rem;
     padding: 13px 16px;
@@ -97,31 +104,35 @@ a {
 
 /* Hero */
 
-.header .hero {
-    margin-top: 130px;
+.hero-wrap {
+    position: relative;
+    height: calc(100vh - 90px);
+    background: #e6f0ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.header .hero .info {
+.hero-wrap .hero .info {
     width: 51%;
 }
 
-.header .hero .sub-title {
+.hero-wrap .hero .sub-title {
     font-weight: 500;
     font-size: 1.8rem;
     letter-spacing: 0.01em;
     color: #687690;
 }
 
-.header .hero .title {
+.hero-wrap .hero .title {
     margin-top: 8px;
-
     font-weight: 700;
     font-size: 6.2rem;
     line-height: 1.19;
     color: #000336;
 }
 
-.header .hero .desc {
+.hero-wrap .hero .desc {
     margin-top: 30px;
     font-weight: 400;
     font-size: 1.8rem;
@@ -129,12 +140,12 @@ a {
     color: #5a6473;
 }
 
-.header .hero .btn-cta {
+.hero-wrap .hero .btn-cta {
     margin-top: 40px;
     min-width: 170px;
 }
 
-.header .hero .hero-img {
+.hero-wrap .hero .hero-img {
     position: absolute;
     bottom: 0;
     right: calc((100% - 1110px) / 2 - 100px);
