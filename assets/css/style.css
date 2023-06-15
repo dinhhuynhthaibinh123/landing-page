@@ -511,3 +511,137 @@ a {
     line-height: 1.5;
     color: #7b8087;
 }
+
+/* ===================== Subscription=========================== */
+
+.subscription {
+    margin-top: 90px;
+}
+
+.subscription .body {
+    height: 370px;
+    background: #063183;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.subscription .info {
+    width: 670px;
+    padding: 0 80px;
+}
+
+.subscription .sub-title {
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1;
+    color: #ffffff;
+}
+
+.subscription .desc {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.88;
+    color: #ffffff;
+    opacity: 0.75;
+}
+
+.subscription .btn {
+    margin-top: 20px;
+    min-width: 151px;
+    background-color: #ffffff;
+    color: #002366;
+}
+
+.subscription .image {
+    position: absolute;
+    bottom: 0;
+    right: 221px;
+}
+
+/* ================== Footer ====================== */
+
+.footer {
+    margin-top: 55px;
+    padding: 50px 0;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .row-top {
+    column-gap: 185px;
+}
+.footer .heading {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.2;
+    color: #1c1c1d;
+}
+
+.footer .list {
+    margin-top: 42px;
+}
+
+.footer .item a {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #7a7a7e;
+    white-space: nowrap;
+}
+
+.footer .item:hover a {
+    text-decoration: underline;
+}
+
+.footer .column .desc {
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #7a7a7e;
+}
+
+.footer .item + .item {
+    margin-top: 18px;
+}
+
+.footer .social {
+    margin-top: 40px;
+    display: flex;
+    gap: 16px;
+}
+
+.footer .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.footer .social-link:hover {
+    background-color: #ddd;
+}
+
+.footer .row-bottom {
+    margin-top: 81px;
+
+    align-items: center;
+}
+
+.footer .copyright {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: #c2c2c2;
+}
