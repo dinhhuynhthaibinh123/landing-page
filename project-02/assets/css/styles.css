@@ -1,0 +1,14 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: red;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* Common */
